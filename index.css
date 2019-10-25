@@ -1,0 +1,67 @@
+body {  
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.4s;
+  width: 300px;
+  display: block;
+  position: relative;
+}
+.card__img {
+  height: 140px;
+  background: center/cover no-repeat;
+}
+.card__content {
+  padding: 29px 35px 35px;
+}
+.card__type {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  color: #9aa0a6;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card__title {
+  margin-top: 10px;
+  color: #3c4043;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 26px;
+  transition: 0.4s;
+}
+.card__description {
+  margin-top: 15px;
+  padding-bottom: 20px;
+  color: #5f6368;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+.card__openInNewIcon {
+  color: #5f6368;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.card:hover {
+  transition: 0.4s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.card:hover .card__title {
+  transition: 0.4s;
+  color: #4285f4;
+}
+.card:hover .card__openInNewIcon {
+  transition: 0.4s;
+  opacity: 1;
+}
