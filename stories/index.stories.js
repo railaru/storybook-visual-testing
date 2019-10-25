@@ -3,7 +3,7 @@ export default {
 };
 
 export const matCard = () => {
-  const card = document.createElement("div");  
+  const card = document.createElement("div");    
   card.innerHTML = `
     <a href='#' class="card">
       <div class='card__img' style="background-image: url(&quot;https://lh3.googleusercontent.com/PRotPPURtGlMjzxd8Irny87OqVJUjfhzgve-xPsmnzpwzf9uC1wtsQ5_DeVg5n1P-AOKb7Coj79N0abcYKn5WVvu3najPsRxV5szk0c&quot;);">

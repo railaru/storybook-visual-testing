@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "jest:integration": "jest -c integration/jest.config.js",
+    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
+    "storybook": "start-storybook -p 900 -s public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@storybook/addon-storyshots": "^5.2.5",
+    "jest-image-snapshot": "^2.11.0",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^2.0.0",
+    "start-server-and-test": "^1.10.6"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@storybook/html": "^5.2.5",
